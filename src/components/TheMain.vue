@@ -6,7 +6,7 @@ export default{
 </script>
 
 <template>
-  <main>
+  <main class="bg-main">
     <section class="jumbo">
       <div class="jumbo-img"></div>
       <div class="jumbo-content">
@@ -20,12 +20,12 @@ export default{
     </section>
 
     <section class="foodie-journal">
-      <div class="container">
-        <h5 class="text-center">FOODIE JOURNAL</h5>
-        <div class="card-container d-flex">
+      <div class="container  p-5 bg-light">
+        <h5 class="section-title">FOODIE JOURNAL</h5>
+        <div class="card-container d-flex justify-content-between h-100 ">
 
-          <div class="card" style="width: 18rem;">
-            <img src="../assets/img/" class="card-img-top" alt="...">
+          <div class="card" style="width: 23rem;">
+            <img src="../assets/img/foodie-journal-1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5>Food Corner: Top Japanese <br> Restaurant for Sushi</h5>
               <small>By admin - March 25th.2019</small>
@@ -33,16 +33,16 @@ export default{
             </div>
           </div>
 
-          <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+          <div class="card " style="width: 23rem;">
+            <img src="../assets/img/foodie-journal-2.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5>Roundup: My New Favourite <br>Recipes For Healthy Living</h5>
               <small>By admin - March 25th.2019</small>
             </div>
           </div>
 
-          <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+          <div class="card" style="width: 23rem;">
+            <img src="../assets/img/foodie-journal-3.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5>Why These Toasts With Tea are<br>My New Favorite</h5>
               <small>By admin - March 25th.2019</small>
@@ -65,6 +65,10 @@ export default{
 <style lang="scss" scoped>
 @use "../scss/partials/variables" as *;
 
+
+.bg-main{
+  background-color: $secondary-color;
+}
 .jumbo{
   min-height: 600px;
   background-image: url(../assets/img/1-jumbo.jpg);
@@ -94,6 +98,27 @@ export default{
   left: 50%;
   transform: translatex(-50%);
   cursor: pointer;
+}
+
+.card{
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-title{
+  text-align: center;
+  margin-bottom: 2rem;
+  
+}
+section{
+  margin-bottom: 4rem;
+}
+
+.foodie-journal .container{
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translatex(-50%);
 }
 
 </style>
