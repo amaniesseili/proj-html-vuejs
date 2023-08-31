@@ -6,7 +6,7 @@ import TheFooter from './components/TheFooter.vue';
 
 
 export default {
-    components: { 
+    components: {  
       TheFooter,
       TheHeader,
       TheMain

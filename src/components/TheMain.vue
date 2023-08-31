@@ -10,5 +10,6 @@ export default{
 </template>
 
 <style lang="scss" scoped>
+@use "../scss/partials/variables" as *;
 
 </style>
