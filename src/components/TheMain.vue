@@ -8,9 +8,7 @@ export default{
 <template>
   <main>
     <section class="jumbo">
-
       <div class="jumbo-img"></div>
-
       <div class="jumbo-content">
         <button class="jumbo-btn">TODAY'S PICK</button>
         
@@ -19,6 +17,43 @@ export default{
           <small>March 25.2019</small>
         </div>
       </div>
+    </section>
+
+    <section class="foodie-journal">
+      <div class="container">
+        <h5 class="text-center">FOODIE JOURNAL</h5>
+        <div class="card-container d-flex">
+
+          <div class="card" style="width: 18rem;">
+            <img src="../assets/img/" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5>Food Corner: Top Japanese <br> Restaurant for Sushi</h5>
+              <small>By admin - March 25th.2019</small>
+
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5>Roundup: My New Favourite <br>Recipes For Healthy Living</h5>
+              <small>By admin - March 25th.2019</small>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5>Why These Toasts With Tea are<br>My New Favorite</h5>
+              <small>By admin - March 25th.2019</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
 
     </section>
 
