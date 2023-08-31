@@ -10,7 +10,7 @@ export default{
 
 <template>
   <header>
-    
+
     <div class="container">
       <div class="header-info">
         <div class="d-flex">
@@ -60,10 +60,18 @@ export default{
   align-items: center;
   gap: 4rem;
   margin-bottom: 1rem;
-  padding-bottom: 0.5rem;
-  margin-bottom: 0.5rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
 
 }
+.nav-menu{
+  padding-bottom:0.5rem;
+}
+.nav-menu:hover {
+  color: $primary-color;
+  border-bottom: 2px solid $primary-color;
+}
+
 
 .logo{
   display:flex;
