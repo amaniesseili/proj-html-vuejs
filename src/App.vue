@@ -10,12 +10,24 @@ export default {
       TheFooter,
       TheHeader,
       TheMain
-    }
+    },
+    data() {
+      return {
+        navigationListItem:[       // 1- VOCI MENU: creo un array per popolare le voci->props->template<TheHeader:nav.. >
+          { id: 1, title: "Home" },
+          { id: 1, title: "Recipes" },
+          { id: 1, title: "Places" },
+          { id: 1, title: "Blog" },
+          { id: 1, title: "About" },
+          { id: 1, title: "Contact" }
+        ]
+      }
+    },
 }
 </script>
 
 <template>
-  <TheHeader></TheHeader>
+  <TheHeader :navigationItems="navigationListItem"></TheHeader> 
 
   <TheMain></TheMain>
 
