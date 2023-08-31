@@ -60,7 +60,6 @@ export default{
   align-items: center;
   gap: 4rem;
   margin-bottom: 1rem;
-  padding-bottom: 2rem;
   margin-bottom: 2rem;
 
 }
