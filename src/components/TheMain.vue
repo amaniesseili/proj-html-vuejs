@@ -8,20 +8,18 @@ export default{
 <template>
   <main>
     <section class="jumbo">
+
       <div class="jumbo-img"></div>
 
       <div class="jumbo-content">
-        
         <button class="jumbo-btn">TODAY'S PICK</button>
         
         <div class="jumbo-text text-center bg-light pt-4 pb-3">
           <h2>Food Corner: Top Japanese <br>Resaurant for Sushi</h2>
           <small>March 25.2019</small>
         </div>
-
       </div>
 
-  
     </section>
 
   </main>
@@ -52,8 +50,15 @@ export default{
   top:50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-
+  padding: 3rem;
+  border-radius: 5px; 
+}
+.jumbo-btn{
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translatex(-50%);
+  cursor: pointer;
 }
 
 </style>
