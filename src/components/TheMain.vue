@@ -145,7 +145,7 @@ export default{
         </div>
       </div>
     </section>
-    <!-------------------section3- Frm to table ------------->
+    <!-------------------section5- Fram to table ------------->
     <section>
       <div class="container">
         <div >
@@ -155,14 +155,10 @@ export default{
             
           </div>
             <P class="p-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Nesciunt animi in a quos expedita officia !</P>
-
-
-
-
         </div>
-        <div class="row ">
+        <div class="row  ">
           <div class="col-8">
-            <div class="card rounded-0 mb-5 border-0">
+            <div class="card rounded-0 mb-5 me-4 border-0">
               <img src="../assets/img/1-jumbo.jpg" class="card-img-top rounded-0" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Food Corner:Top Japanese Restaurants for Sushi</h5>
@@ -179,7 +175,7 @@ export default{
                   <small class="text-center"> By admin- March 25th.2019</small>
                 </div>
               </div>
-              <div class="card rounded-0 mb-5 border-0" style="width: 27rem;">
+              <div class="card rounded-0 mb-5 p border-0" style="width: 27rem;">
                 <img src="src/assets/img/section-4-col6-img2.jpg" class="rounded-0" alt="...">
                 <div class="card-body">
                   <h5 class="card-title text-center">Meal Prep: Korean Bibimbap<br>with KImchi</h5>
@@ -226,7 +222,52 @@ export default{
           </div>
             
 
-          <div class="col-4">ghj
+          <div class="col-4 ">
+            <div class="card mb-5  rounded-0" style="width: 26rem; height: 25remauto">
+              <img src="src/assets/img/section-4-col4-img1.jpg" class="card-img-top rounded-0" alt="...">
+            </div>
+
+            <div class="card" style="width: 26rem;">
+              <img src="src/assets/img/section-4-col4-img2.jpg" class="card-img-top rounded-0" alt="...">
+              <div class="card-body">
+                <a href="#" class="btn m-0 btn-farm-table d-flex justify-content-center">VIEW ALL CITY CUIDES</a>
+              </div>
+            </div>
+            
+            <div class="input-group input-group-lg mt-4 mb-4 d-flex ">
+              <input type="text" class="form-control flex-grow-1" placeholder="Search.." aria-describedby="inputGroup-sizing-lg">
+            </div>
+            <div>
+              <p class="text-color-primary"><b>Follow Us</b></p>
+            </div>
+            <div class="social-icons">
+              <i class="fa-brands fa-facebook-f  me-5"></i>
+              <i class="fa-brands fa-instagram me-5"></i>
+              <i class="fa-brands fa-twitter me-5"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div class="d-flex mb-2">
+              <button type="button" class="btn btn-outline-secondary rounded-0 flex-grow-1 t" disabled>Popular</button>
+              <button type="button" class="btn btn-outline-secondary rounded-0 flex-grow-1" disabled>Recent</button>
+            </div>
+            <div>
+              <div class="d-flex mt-5">
+                <img src="../assets/img/1-jumbo.jpg" class="img-farm-table me-4" alt="">
+                <p class="mb-2">Food Corner: Top Japanese Restaurants for Sushi <br><small>March 25th,2019</small> </p>
+              </div>
+              <div class="d-flex mt-5">
+                <img src="../assets/img/foodie-journal-3.jpg" class="img-farm-table me-4" alt="">
+                <p class="mb-2">Food Corner: Top Japanese Restaurants for Sushi <br><small>March 25th,2019</small> </p>
+              </div>
+              <div class="d-flex mt-5">
+                <img src="../assets/img/section2-col-3-img4.jpg" class="img-farm-table me-4" alt="">
+                <p class="mb-2">Food Corner: Top Japanese Restaurants for Sushi <br><small>March 25th,2019</small> </p>
+              </div>
+              <div>
+                <img src="src/assets/img/tweets.jpg" class="mt-5 p-4" style="width: 28rem;" alt="">
+              </div>
+
+            </div>
 
           </div>
         </div>
@@ -348,6 +389,34 @@ margin-bottom: 3rem;
 .btn-culinary-collection:hover{
   background-color: $primary-color;
   color: white;
+}
+
+
+.btn-farm-table{
+  background-color: $primary-color;
+  color: white;
+  border-radius: 0%;
+}
+
+.text-color-primary{
+  color: $primary-color;
+}
+.social-icons{
+  color: rgb(70, 68, 68);
+  padding-bottom: 2rem;
+}
+.fa-brands{
+  font-size: 20px;
+  background-color: rgb(201, 195, 195);
+  padding: 0.5rem;
+  border-radius: 5px;
+
+}
+.img-farm-table{
+  width: 18%;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+
 }
 
 
