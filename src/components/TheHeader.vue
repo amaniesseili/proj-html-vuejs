@@ -15,7 +15,7 @@ export default{
       <div class="header-info pt-2">
         <div class="d-flex">
           <p><small>Download App</small>
-            <button class="jumbo-btn">IOS</button>
+            <button class="my-btn">IOS</button>
           </p>
           <p class="ms-5"><small>Advertise with us</small></p>
         </div>
@@ -95,7 +95,7 @@ export default{
   color: gray;
   font-weight: bold;
 }
-.jumbo-btn{
+.my-btn{
   background-color: $primary-color;
   color: white;
   border-radius: 10px;

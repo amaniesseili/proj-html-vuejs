@@ -18,7 +18,7 @@ export default{
         </div>
       </div> 
     </section>
-
+<!--------- section-2 Foodie Journal -------- -->
     <section class="foodie-journal">
       <div class="container  p-5 bg-light">
         <h5 class="section-title">FOODIE JOURNAL</h5>
@@ -49,13 +49,46 @@ export default{
             </div>
           </div>
         </div>
-
       </div>
-
-
-
-
     </section> 
+
+    <!--------- section-3 Popular Recipes -------- -->
+    <section class="popular-recipes">
+      <div class="container">
+        <h5 class="section-title margin-top-absolute text-center">POPULAR RECIPES</h5>
+        <P class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat laborum dicta <br> pariatur quam totam quod adipisci odio, exercitationem!</P>
+
+        <div class="row d-flex">
+
+          <div class="col-6">
+            <div class="card rounded-0 h-100">
+              <img src="../assets/img/section2-col-6.jpg" class="card-img-top rounded-0" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Lunch Favourite with Salad,Naan And Beans</h5>
+                <small>Bakery, Featured,Healthy, Latest Recipes, Staff Picks. </small>
+                <p class="card-text my-text-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur illum aspernatur sit culpa fugit blanditiis ipsum, totam voluptas earum dolores quasi accusamus maiores ratione. Corporis nihil aspernatur eveniet quo aut.</p>
+                <a href="#" class="btn my-btn rounded-0">LEARN MORE</a>
+              </div>
+            </div>
+          </div>
+
+                      
+          <div class="col-3">
+            <img src="../assets/img/section2-col-3-img1.jpg" class="popular-recipes-img mb-4" alt="">
+            <img src="../assets/img/section2-col-3-img2.jpg" class="popular-recipes-img mb-4" alt="">
+            <img src="../assets/img/section2-col-3-img3.jpg" class="popular-recipes-img mb-4" alt="">
+            <img src="../assets/img/section2-col-3-img4.jpg" class="popular-recipes-img " alt="">   
+          </div>
+          <div class="col-3">
+            <img src="../assets/img/section2-col-3-img5.jpg" class="popular-recipes-img mb-4" alt="">
+            <img src="../assets/img/section2-col-3-img6.jpg" class="popular-recipes-img mb-4" alt="">
+            <img src="../assets/img/section2-col-3-img7.jpg" class="popular-recipes-img mb-4" alt="">
+            <img src="../assets/img/section2-col-3-img8.jpg" class="popular-recipes-img " alt="">   
+          </div>
+
+        </div>
+      </div>
+    </section>
 
   </main>
 
@@ -113,6 +146,7 @@ export default{
 }
 section{
   margin-bottom: 4rem;
+  margin-top: 4rem;
 }
 
 .foodie-journal .container{
@@ -121,5 +155,35 @@ section{
   left: 50%;
   transform: translatex(-50%);
 }
+
+
+.margin-top-absolute{
+  margin-top: 500px;
+}
+
+.my-btn{
+  background-color: $primary-color;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+}
+
+.popular-recipes-img{
+  height: 10rem;
+  width: 100%;
+}
+.container{
+  margin-top: 2rem;
+}
+.row{
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+.my-text-card{
+margin-top: 2rem;
+margin-bottom: 3rem;
+
+}
+
 
 </style>
