@@ -266,12 +266,34 @@ export default{
               <div>
                 <img src="src/assets/img/tweets.jpg" class="mt-5 p-4" style="width: 28rem;" alt="">
               </div>
-
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-------------------section6-subscribe & Receive a free eBook ------------->
+    <section class="form ">
+      <div class="container">
+        <div class="row d-flex">
+          <div class="col-3"></div>
+          <div class="col-6 text-center align-items-center ">
+            <h3 class="mb-4 align-content-center ">Subscribe <span class="text-color-primary">&</span> Receive A FREE eBook</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea id, maiores ullam cupiditate amet illo voluptatem facilis molestiae.</p>
+    
+            <div class="d-flex mt-5">
+              <div class="flex-grow-1 me-3 ">
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="insert your email.." aria-describedby="emailHelp">
+              </div>
+              <div class=""><a href="#" class="btn my-btn rounded-0">SUBSCRIBE</a></div>
             </div>
 
           </div>
         </div>
+
+      
       </div>
+
+
 
     </section>
 
@@ -417,6 +439,19 @@ margin-bottom: 3rem;
   border-radius: 50%;
   aspect-ratio: 1/1;
 
+}
+
+.form{
+  background-image: url(src/assets/img/bg-subscribe.jpg);
+  min-height: 550px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+
+}
+
+.align-items-center{
+  padding-top: 200px;
 }
 
 
