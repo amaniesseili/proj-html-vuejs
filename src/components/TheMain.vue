@@ -9,14 +9,14 @@ export default{
   <main class="bg-main">
     <section class="jumbo">
       <div class="jumbo-img"></div>
-      <div class="jumbo-content">
-        <button class="jumbo-btn">TODAY'S PICK</button>
+        <div class="jumbo-content">
+          <button class="jumbo-btn">TODAY'S PICK</button> 
         
-        <div class="jumbo-text text-center bg-light pt-4 pb-3">
+        <div class="jumbo-text text-center bg-light pt-4 pb-3 pe-5 ps-5 rounded">
           <h2>Food Corner: Top Japanese <br>Resaurant for Sushi</h2>
           <small>March 25.2019</small>
         </div>
-      </div>
+      </div> 
     </section>
 
     <section class="foodie-journal">
@@ -55,7 +55,7 @@ export default{
 
 
 
-    </section>
+    </section> 
 
   </main>
 
@@ -83,6 +83,7 @@ export default{
   color: white;
   border-radius: 10px;
   padding: 0.2rem 1rem;
+  border: none;
 }
 .jumbo-content{
   position: absolute;

@@ -12,9 +12,11 @@ export default{
   <header>
 
     <div class="container">
-      <div class="header-info">
+      <div class="header-info pt-2">
         <div class="d-flex">
-          <p><small>Download App</small></p>
+          <p><small>Download App</small>
+            <button class="jumbo-btn">IOS</button>
+          </p>
           <p class="ms-5"><small>Advertise with us</small></p>
         </div>
         <div class="social-icons">
@@ -23,6 +25,7 @@ export default{
           <i class="fa-brands fa-twitter"></i>
           <i class="fa-brands fa-youtube"></i>
         </div>
+
       </div>
     </div>
 
@@ -38,6 +41,7 @@ export default{
         <div class="nav-menu" v-for="item in navigationItems" :key="item.id">
           {{item.title}}
         </div>
+        
       </div>
     </nav>
 
@@ -88,6 +92,21 @@ export default{
 .header-info{
   display: flex;
   justify-content: space-between;
+  color: gray;
+  font-weight: bold;
+}
+.jumbo-btn{
+  background-color: $primary-color;
+  color: white;
+  border-radius: 10px;
+  padding: 0.05rem 0.5rem;
+  border: none;
+  margin-left: 0.5rem;
+}
+
+.fa-brands{
+  padding-left: 2rem;
+  color: gray;
 }
 
 
