@@ -86,7 +86,7 @@ export default{
       </div>
     </section>
 <!-------------------section3- culinary-collection ------------->
-    <section class="culinary-collection">
+    <section class="culinary-collection ">
       <div class="container">
         <h5 class="section-title">CULINARY COLLECTION</h5>
         <P class="text-center p-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Nesciunt animi in a quos expedita officia !</P>
@@ -143,8 +143,95 @@ export default{
             </div>
           </div>
         </div>
-        
       </div>
+    </section>
+    <!-------------------section3- Frm to table ------------->
+    <section>
+      <div class="container">
+        <div >
+          <div class="d-flex justify-content-between ">
+            <h5 class="farm-table">FARM TO TABLE</h5>
+            <div class="farm-table"><a href="#" class="btn my-btn rounded-0 ps-5 pe-5">READ OUR BLOG</a></div>
+            
+          </div>
+            <P class="p-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Nesciunt animi in a quos expedita officia !</P>
+
+
+
+
+        </div>
+        <div class="row ">
+          <div class="col-8">
+            <div class="card rounded-0 mb-5 border-0">
+              <img src="../assets/img/1-jumbo.jpg" class="card-img-top rounded-0" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Food Corner:Top Japanese Restaurants for Sushi</h5>
+                <small> By admin- March 25th.2019</small>
+                <p class="card-text my-text-card border-top pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur illum aspernatur sit culpa fugit blanditiis ipsum, totam voluptas earum dolores quasi accusamus maiores ratione. Corporis nihil aspernatur eveniet quo aut.</p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+            <div class="row d-flex justify-content-between">
+              <div class="card rounded-0 mb-5 border-0" style="width: 27rem;">
+                <img src="src/assets/img/section-4-col6-img1.jpg" class="rounded-0" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Roundeup: my New Favourite <br> Recipes For Healthy Living</h5>
+                  <small class="text-center"> By admin- March 25th.2019</small>
+                </div>
+              </div>
+              <div class="card rounded-0 mb-5 border-0" style="width: 27rem;">
+                <img src="src/assets/img/section-4-col6-img2.jpg" class="rounded-0" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Meal Prep: Korean Bibimbap<br>with KImchi</h5>
+                  <small class="text-center"> By admin- March 25th.2019</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="row d-flex justify-content-between">
+              <div class="card rounded-0 mb-5 border-0" style="width: 27rem;">
+                <img src="src/assets/img/section-4-col6-img3.jpg" class="rounded-0" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Why These Toast with Tea are<br>My New Favorite</h5>
+                  <small class="text-center"> By admin- March 25th.2019</small>
+                </div>
+              </div>
+              <div class="card rounded-0 mb-5 border-0" style="width: 27rem;">
+                <img src="src/assets/img/section-4-col6-img4.jpg" class="rounded-0" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Exploring Street Food in<br>Bangkok</h5>
+                  <small class="text-center"> By admin- March 25th.2019</small>
+                </div>
+              </div>
+            </div>
+            <div class="row d-flex justify-content-between">
+              <div class="card rounded-0 mb-5 border-0" style="width: 27rem;">
+                <img src="src/assets/img/section-4-col6-img5.jpg" class="rounded-0" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Organic Choices For Healthier<br>Living</h5>
+                  <small class="text-center"> By admin- March 25th.2019</small>
+                </div>
+              </div>
+              <div class="card rounded-0 mb-5 border-0" style="width: 27rem;">
+                <img src="src/assets/img/section-4-col6-img6.jpg" class="rounded-0" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">5 Waterside Restaurants in<br>Istanbul for Special Events</h5>
+                  <small class="text-center"> By admin- March 25th.2019</small>
+                </div>
+              </div>
+              <div class="card-body">
+                <a href="#" class="btn btn-culinary-collection btn-secondary d-flex">LOAD MORE POSTS</a>
+              </div>
+            </div>
+          </div>
+            
+
+          <div class="col-4">ghj
+
+          </div>
+        </div>
+      </div>
+
     </section>
 
   </main>
@@ -203,6 +290,10 @@ export default{
 .section-title{
   text-align: center;
   margin-bottom: 2rem;
+  padding-top: 5rem;
+
+}
+.farm-table{
   padding-top: 5rem;
 
 }
