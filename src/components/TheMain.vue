@@ -21,7 +21,7 @@ export default{
 <!--------- section-2 Foodie Journal -------- -->
     <section class="foodie-journal">
       <div class="container  p-5 bg-light">
-        <h5 class="section-title">FOODIE JOURNAL</h5>
+        <h5 class="title-jumbo">FOODIE JOURNAL</h5>
         <div class="card-container d-flex justify-content-between h-100 ">
 
           <div class="card" style="width: 23rem;">
@@ -56,7 +56,7 @@ export default{
     <section class="popular-recipes">
       <div class="container">
         <h5 class="section-title margin-top-absolute text-center">POPULAR RECIPES</h5>
-        <P class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat laborum dicta <br> pariatur quam totam quod adipisci odio, exercitationem!</P>
+        <P class="text-center p-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat laborum dicta <br> pariatur quam totam quod adipisci odio, exercitationem!</P>
 
         <div class="row d-flex">
           <div class="col-6">
@@ -85,19 +85,65 @@ export default{
         </div>
       </div>
     </section>
-
-    <section>
+<!-------------------section3- culinary-collection ------------->
+    <section class="culinary-collection">
       <div class="container">
-        <div class="row">
-          <div class="col-3">
-            <img src="../assets/img/" class="popular-recipes-img mb-4" alt="">
-
-            
+        <h5 class="section-title">CULINARY COLLECTION</h5>
+        <P class="text-center p-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Nesciunt animi in a quos expedita officia !</P>
+        <div class="row d-flex justify-content-between  ">
+          <div class="card rounded-0 border-0" style="width: 18rem;">
+            <img src="../assets/img/section-3-drinks.jpg" class="card-img-top p-3" alt="...">
+            <div class="card-body">
+              <a href="#" class="btn btn-culinary-collection d-flex">DRINK</a>
+            </div>
           </div>
-          <div class="col-3">mk,</div>
-          <div class="col-3">m,</div>
-          <div class="col-3">mkl</div>
+          <div class="card rounded-0 border-0 " style="width: 18rem;">
+            <img src="../assets/img/section-3-healthy.jpg" class="card-img-top " alt="...">
+            <div class="card-body">
+              <a href="#" class="btn btn-culinary-collection d-flex">HEALTHY</a>
+            </div>
+          </div>
+          <div class="card rounded-0 border-0" style="width: 18rem;">
+            <img src="../assets/img/section-3-soups.jpg" class="card-img-top " alt="...">
+            <div class="card-body">
+              <a href="#" class="btn btn-culinary-collection d-flex">SOUPS</a>
+            </div>
+          </div>
+          <div class="card rounded-0 border-0 " style="width: 18rem;">
+            <img src="../assets/img/section-3-stuff-picks.jpg" class="card-img-top " alt="...">
+            <div class="card-body">
+              <a href="#" class="btn btn-culinary-collection d-flex">STAFF PICK</a>
+            </div>
+          </div>
+
         </div>
+        <div class="row d-flex justify-content-between">
+          <div class="card rounded-0 border-0" style="width: 18rem;">
+            <img src="../assets/img/section-3-bakery.jpg" class="card-img-top " alt="...">
+            <div class="card-body">
+              <a href="#" class="btn btn-culinary-collection d-flex">BAKERY</a>
+            </div>
+          </div>
+          <div class="card rounded-0 border-0" style="width: 18rem;">
+            <img src="../assets/img/section-3-appetiser.jpg" class="card-img-top " alt="...">
+            <div class="card-body">
+              <a href="#" class="btn btn-culinary-collection d-flex">APPETISERS</a>
+            </div>
+          </div>
+          <div class="card rounded-0 border-0" style="width: 18rem;">
+            <img src="../assets/img/section-3-dinner.jpg" class="card-img-top " alt="...">
+            <div class="card-body">
+              <a href="#" class="btn btn-culinary-collection d-flex">DINER</a>
+            </div>
+          </div>
+          <div class="card rounded-0 border-0" style="width: 18rem;">
+            <img src="../assets/img/section-3-quick&easy.jpg" class="card-img-top " alt="...">
+            <div class="card-body">
+              <a href="#" class="btn btn-culinary-collection d-flex">QUICK & EASY</a>
+            </div>
+          </div>
+        </div>
+        
       </div>
     </section>
 
@@ -149,11 +195,20 @@ export default{
   display: flex;
   justify-content: space-between;
 }
+.title-jumbo{
+  text-align: center;
+  margin-bottom: 2rem;
 
+}
 .section-title{
   text-align: center;
   margin-bottom: 2rem;
-  
+  padding-top: 5rem;
+
+}
+.p-title{
+  margin-bottom: 4rem;
+
 }
 section{
   margin-bottom: 4rem;
@@ -188,12 +243,20 @@ section{
 }
 .row{
   margin-top: 2rem;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 .my-text-card{
 margin-top: 2rem;
 margin-bottom: 3rem;
 
+}
+.btn-culinary-collection{
+  border-radius: 0%;
+  justify-content: center;
+}
+.btn-culinary-collection:hover{
+  background-color: $primary-color;
+  color: white;
 }
 
 
