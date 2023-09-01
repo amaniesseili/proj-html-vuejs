@@ -59,7 +59,6 @@ export default{
         <P class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat laborum dicta <br> pariatur quam totam quod adipisci odio, exercitationem!</P>
 
         <div class="row d-flex">
-
           <div class="col-6">
             <div class="card rounded-0 h-100">
               <img src="../assets/img/section2-col-6.jpg" class="card-img-top rounded-0" alt="...">
@@ -70,9 +69,7 @@ export default{
                 <a href="#" class="btn my-btn rounded-0">LEARN MORE</a>
               </div>
             </div>
-          </div>
-
-                      
+          </div>         
           <div class="col-3">
             <img src="../assets/img/section2-col-3-img1.jpg" class="popular-recipes-img mb-4" alt="">
             <img src="../assets/img/section2-col-3-img2.jpg" class="popular-recipes-img mb-4" alt="">
@@ -85,7 +82,21 @@ export default{
             <img src="../assets/img/section2-col-3-img7.jpg" class="popular-recipes-img mb-4" alt="">
             <img src="../assets/img/section2-col-3-img8.jpg" class="popular-recipes-img " alt="">   
           </div>
+        </div>
+      </div>
+    </section>
 
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <img src="../assets/img/" class="popular-recipes-img mb-4" alt="">
+
+            
+          </div>
+          <div class="col-3">mk,</div>
+          <div class="col-3">m,</div>
+          <div class="col-3">mkl</div>
         </div>
       </div>
     </section>
