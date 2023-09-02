@@ -20,10 +20,19 @@ export default {
           { id: 1, title: "Blog" },
           { id: 1, title: "About" },
           { id: 1, title: "Contact" }
-        ]
-      }
-    },
-}
+        ],
+
+        footerListItem:["Recipes","Places","Blog","About","Contact"],
+
+        contactInfo:{         
+          address:"775 New York Ave, Brooklyn, Kings, New York 11203",
+          phoneNumber: "+0100-505-0000",
+          email:"info@your-domain.com"
+
+        }
+      };
+    }
+};
 </script>
 
 <template>
@@ -31,7 +40,7 @@ export default {
 
   <TheMain></TheMain>
 
-  <TheFooter></TheFooter>
+  <TheFooter :footerItems="footerListItem" :contactInfo="contactInfo"></TheFooter>
   
 </template>
 

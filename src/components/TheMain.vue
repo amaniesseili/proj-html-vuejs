@@ -7,42 +7,62 @@ export default{
 
 <template>
   <main class="bg-main">
+    <!-- section 1 jumbo -->
     <section class="jumbo">
       <div class="jumbo-img"></div>
         <div class="jumbo-content">
           <button class="jumbo-btn">TODAY'S PICK</button> 
         
         <div class="jumbo-text text-center bg-light pt-4 pb-3 pe-5 ps-5 rounded">
-          <h2>Food Corner: Top Japanese <br>Resaurant for Sushi</h2>
+          <h2 class="jumbo-text">Food Corner: Top Japanese <br>Resaurant for Sushi</h2>
           <small>March 25.2019</small>
         </div>
       </div> 
     </section>
+
+
 <!--------- section-2 Foodie Journal -------- -->
+
     <section class="foodie-journal">
       <div class="container  p-5 bg-light">
         <h5 class="title-jumbo">FOODIE JOURNAL</h5>
+
         <div class="card-container d-flex justify-content-between h-100 ">
 
-          <div class="card" style="width: 23rem;">
-            <img src="../assets/img/foodie-journal-1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
+          <div class="card " style="width: 23rem;">
+            <div class="image-container">
+              <img src="../assets/img/foodie-journal-1.jpg" class="card-img-top" alt="...">
+              <div class="overlay text-center">
+                <div><i class="fa-solid fa-link bg-light  align-text-v-h"></i></div>
+                <h6 class="card-title">Fruit Platter with Banana, Mango Berries and Orange</h6>
+              </div>
+            </div>
+            <div class="card-body ">
               <h5>Food Corner: Top Japanese <br> Restaurant for Sushi</h5>
               <small>By admin - March 25th.2019</small>
-
             </div>
           </div>
-
           <div class="card " style="width: 23rem;">
-            <img src="../assets/img/foodie-journal-2.jpg" class="card-img-top" alt="...">
+            <div class="image-container">
+              <img src="../assets/img/foodie-journal-2.jpg" class="card-img-top" alt="...">
+              <div class="overlay text-center">
+                <div><i class="fa-solid fa-link bg-light  align-text-v-h"></i></div>
+                <h6 class="card-title">Fruit Platter with Banana, Mango Berries and Orange</h6>
+              </div>
+            </div>
             <div class="card-body">
               <h5>Roundup: My New Favourite <br>Recipes For Healthy Living</h5>
               <small>By admin - March 25th.2019</small>
             </div>
           </div>
-
-          <div class="card" style="width: 23rem;">
-            <img src="../assets/img/foodie-journal-3.jpg" class="card-img-top" alt="...">
+          <div class="card " style="width: 23rem;">
+            <div class="image-container">
+              <img src="../assets/img/foodie-journal-3.jpg" class="card-img-top" alt="...">
+              <div class="overlay text-center">
+                <div><i class="fa-solid fa-link bg-light  align-text-v-h"></i></div>
+                <h6 class="card-title">Fruit Platter with Banana, Mango Berries and Orange</h6>
+              </div>
+            </div>
             <div class="card-body">
               <h5>Why These Toasts With Tea are<br>My New Favorite</h5>
               <small>By admin - March 25th.2019</small>
@@ -61,7 +81,14 @@ export default{
         <div class="row d-flex">
           <div class="col-6">
             <div class="card rounded-0 h-100">
+              <div class="image-container">
               <img src="../assets/img/section2-col-6.jpg" class="card-img-top rounded-0" alt="...">
+              <div class="overlay text-center pt-5">
+                <div><i class="fa-solid fa-link bg-light  align-text-v-h mb-5"></i></div>
+                <h4 class="card-title">Fruit Platter with Banana, Mango Berries and Orange</h4>
+              </div>
+              </div>
+
               <div class="card-body">
                 <h5 class="card-title">Lunch Favourite with Salad,Naan And Beans</h5>
                 <small>Bakery, Featured,Healthy, Latest Recipes, Staff Picks. </small>
@@ -274,10 +301,10 @@ export default{
     <!-------------------section6-subscribe & Receive a free eBook ------------->
     <section class="form ">
       <div class="container">
-        <div class="row d-flex">
+        <div class="row d-flex align-items-center ">
           <div class="col-3"></div>
-          <div class="col-6 text-center align-items-center ">
-            <h3 class="mb-4 align-content-center ">Subscribe <span class="text-color-primary">&</span> Receive A FREE eBook</h3>
+          <div class="col-6 form-center text-center d-flex flex-column align-items-center">
+            <h3 class="mb-4  align-content-center ">Subscribe <span class="text-color-primary">&</span> Receive A FREE eBook</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea id, maiores ullam cupiditate amet illo voluptatem facilis molestiae.</p>
     
             <div class="d-flex mt-5">
@@ -286,15 +313,50 @@ export default{
               </div>
               <div class=""><a href="#" class="btn my-btn rounded-0">SUBSCRIBE</a></div>
             </div>
-
           </div>
         </div>
-
-      
       </div>
+    </section>
 
+    <!-- section 6- column wrapper -->
 
+    <section class="column-wrapper">
 
+      <div class="">
+        <div class="row">
+          <div class="col d-flex">
+            <div class="card text-bg-dark" style="width: 25%;">
+              <img src="src/assets/img/1-jumbo.jpg" class="card-img" alt="...">
+              <div class="card-img-overlay text-center">
+                <div><i class="fa-solid fa-link bg-light align-text-v-h"></i></div>
+                <h5 class="card-title">Fruit Platter with Banana, Mango Berries and Orange</h5>
+              </div>
+            </div>
+            <div class="card text-bg-dark" style="width: 25%;">
+              <img src="src/assets/img/foodie-journal-3.jpg" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                <div><i class="fa-solid fa-link bg-light fs-4 align-text-v-h"></i></div>
+                <h5 class="card-title">Fruit Platter with Banana, Mango Berries and Orange</h5>
+              </div>
+            </div>
+            <div class="card text-bg-dark" style="width: 25%;">
+              <img src="src/assets/img/foodie-journal-2.jpg" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                <div><i class="fa-solid fa-link bg-light fs-4 align-text-v-h"></i></div>
+                <h5 class="card-title">Fruit Platter with Banana, Mango Berries and Orange</h5>
+              </div>
+            </div>
+            <div class="card text-bg-dark" style="width: 25%;">
+              <img src="src/assets/img/section2-col-3-img5.jpg" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                <div><i class="fa-solid fa-link bg-light  align-text-v-h"></i></div>
+                <h5 class="card-title">Fruit Platter with Banana, Mango Berries and Orange</h5>
+              </div>
+            </div>
+ 
+          </div>
+        </div>
+      </div> 
     </section>
 
   </main>
@@ -340,10 +402,15 @@ export default{
   transform: translatex(-50%);
   cursor: pointer;
 }
+.jumbo-text:hover{
+  color: $primary-color;
+
+}
 
 .card{
   display: flex;
   justify-content: space-between;
+  border-radius: 0%;
 }
 .title-jumbo{
   text-align: center;
@@ -356,6 +423,28 @@ export default{
   padding-top: 5rem;
 
 }
+
+
+
+.image-container{
+  position: relative;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(242, 113, 39, 0.8);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out
+}
+.image-container:hover .overlay{
+  opacity: 1;
+}
+
+
+
 .farm-table{
   padding-top: 5rem;
 
@@ -450,9 +539,39 @@ margin-bottom: 3rem;
 
 }
 
-.align-items-center{
-  padding-top: 200px;
-}
+
+  .column-wrapper{
+    text-align: center;
+    vertical-align: middle;
+    margin-top: -4rem;
+
+  }
+
+  .card-img-overlay{
+    background-color: rgba(242, 113, 39, 0.8);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease
+    
+  }
+  .card:hover .card-img-overlay {
+    opacity: 1;
+  }
+  .form-center{
+    margin-top: 10rem;
+  }
+  .align-text-v-h{
+    margin-top: 5rem;
+
+  }
+  .fa-link{
+    font-size: 2rem ;
+    padding: 1rem;
+    color: black;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+  }
 
 
 </style>
