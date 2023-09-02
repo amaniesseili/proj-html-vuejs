@@ -10,11 +10,11 @@ export default{
     setTimeout(() => {
         this.showIntro = false;      // 1- nascondo la prima slide dopo 10s 
         this.analisiSlide = true;    // 2- mostro la seconda slide 
-    }, 10000);
+    }, 5000);
 
     setTimeout(()=>{
       this.analisiSlide = false;     //3- nascondo la seconda slide dopo altre 10s
-    }, 20000);
+    }, 10000);
   },
 
 };
@@ -60,6 +60,25 @@ export default{
 <!-- slide 2- Analisi layout  -->
 <div v-if="analisiSlide" class="slid">
 
+  <div class="header"></div>
+
+  <div class="index  d-flex">
+    <div>
+      <i class="fa-solid fa-magnifying-glass-chart"></i>
+      <h3 class="text-center mt-5 ms-5 ps-1">Analisi Layout</h3>
+    </div>
+    <div>
+      <i class="fa-solid fa-folder-tree"></i>
+      <h3 class="text-center mt-5 ms-5 ps-4">Struttura</h3>
+    </div>
+    <div>
+      <i class="fa-solid fa-code"></i>
+      <h3 class="text-center mt-5 ms-5 ps-4">Codice</h3>
+    </div>
+
+
+  </div>
+
   <p>questa e la seconda slide </p>
 
 </div>
@@ -73,9 +92,6 @@ export default{
 @use "../scss/partials/variables" as *;
 
 
-p{
-  font-size: 200px;
-}
 .header{
   min-height: 400px;
   background-image: url(../assets/img/1-jumbo.jpg);
@@ -98,7 +114,6 @@ p{
   
 }
 
-
 h1{
   margin-top: 30px;
   font-size: 30px;
@@ -107,6 +122,29 @@ h1{
   vertical-align: middle;
   color: black;
   margin-bottom: 50px;
+}
+
+.fa-solid{
+  background-color: $primary-color;
+  padding: 2rem;
+  font-size: 70px;
+  color: white;
+  margin-left: 5rem;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  border: 2px solid white;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 4rem;
+}
+.index{
+
+  position: absolute;
+  top: 350px;
+  left: 50%;
+  transform: translatex(-50%);
 
 
 }
