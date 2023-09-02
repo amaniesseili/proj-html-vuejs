@@ -3,30 +3,33 @@ export default{
   data(){
     return{
       showIntro: true,
+      analisiSlide: false,
     };
   },
   mounted(){
     setTimeout(() => {
-        this.showIntro = false; //per nascondere il componente del intro dopo 10s
+        this.showIntro = false;      // 1- nascondo la prima slide dopo 10s 
+        this.analisiSlide = true;    // 2- mostro la seconda slide 
     }, 10000);
+
+    setTimeout(()=>{
+      this.analisiSlide = false;     //3- nascondo la seconda slide dopo altre 10s
+    }, 20000);
   },
 
 };
 </script>
 
 <template>
-  <div>
+
+    <!-- slide-1 intro -->
     <div v-if="showIntro" class="intro">
 
-      <div class="header">
-        
-      </div>
+      <div class="header"></div>
 
       <section class="cards">
         <div class="container ">
-  
           <div class="card-container d-flex justify-content-between h-100  ">
-  
             <div class="card me-5" style="width: 20rem;">
                 <img src="src/assets/img/floria.jpg" class="card-img-top" alt="...">
               <div class="card-body ">
@@ -52,10 +55,17 @@ export default{
 
         <h1>FOOD AVADA : WordPress Theme!</h1>
       </section> 
-  
-
     </div>
-  </div>
+
+<!-- slide 2- Analisi layout  -->
+<div v-if="analisiSlide" class="slid">
+
+  <p>questa e la seconda slide </p>
+
+</div>
+
+
+
 
 </template>
 
@@ -63,7 +73,9 @@ export default{
 @use "../scss/partials/variables" as *;
 
 
-
+p{
+  font-size: 200px;
+}
 .header{
   min-height: 400px;
   background-image: url(../assets/img/1-jumbo.jpg);
