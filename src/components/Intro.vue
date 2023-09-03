@@ -11,16 +11,16 @@ export default{
     setTimeout(() => {
         this.showIntro = false;      // 1- nascondo la prima slide dopo 5s 
         this.indexSlide = true;    // 2- mostro la seconda slide 
-    }, 5000);
+    }, 2500);
 
     setTimeout(()=>{
       this.indexSlide= false;     //3- nascondo la seconda slide dopo altre 10s
       this.analisiSlide= true;
-    }, 10000);
+    }, 5000);
 
     setTimeout(()=>{
       this.analisiSlide= false;     //3- nascondo la terza slide dopo altre 45s
-    }, 40000);
+    }, 90000);
   },
 
 };
@@ -63,7 +63,7 @@ export default{
       </section> 
     </div>
 
-<!-- slide 2- Analisi layout  -->
+<!-- slide 2- index  -->
 <div v-if="indexSlide" class="slid">
 
   <div class="header"></div>
@@ -87,7 +87,71 @@ export default{
 
 <!-- slide 2- Analisi layout  --> 
 <div v-if="analisiSlide" class="analisi-layout">
-    <p>analisi layout  </p> 
+  <div class="container d-flex">
+    <div class="row">
+      <div class="col-6 h-100">
+        <img src="src/assets/img/ANALYSIS LAYOUT.jpg" class="analisi-img" alt="">
+      </div>
+    </div>
+
+    <div class="col-6 analisi-">
+      <h3>Struttura del Layout</h3>
+      <p>Il layout del sito è suddiviso in tre sezioni princhipali: <b>Header</b><b> Main</b> e <b>Footer</b>.</p>
+      
+      <div class="header-analysis">
+        <h4>Header</h4>
+        <ul>
+          <li> La sua struttura e semplice presenta il <b>Logo</b> e il <b>Menu di Navigazione</b></li>
+        </ul>
+      </div>
+      <div class="main-analysis">
+        <h4>Main</h4>
+        <p>Il Main contiene <b> 6 sezioni</b> ognuna con un contenuto ben definito e layout molto simile </p>
+        <ul>
+          <li><b> Containers di Bootstrap</b></li>
+          <p>i container sono <b> uguali</b> in tutti le sezioni, con <b>spaziatura specifica</b> sia sopra che sotto il containerper garantire una layout equilibrato. </p>
+        </ul>
+        <ul>
+          <li><b>Contenuto Centrato </b></li>
+          <p>Tanti sezioni hanno il <b>Test Centrato </b>.</p>
+        </ul>
+        <ul>
+          <li><b>Card Bootstrap</b></li>
+          <p>Le Card di Bootstrap sono <b>identici</b> in ogni sezione, ognuna con immagine e corpo informativo.</p>
+        </ul>
+        <ul>
+          <li><b>overlay sull'immagine</b></li>
+          <p>Quasi tutti gli immagine hanno un overlay con un test centralizato.</p>
+        </ul>
+        <ul>
+          <li><b>Scelta dei Colori</b></li>
+          <p>I colori utilisati riflettono la tema culinario del sito e trasmettono specifici significati:
+            <ul>
+              <li><b>Sfondo Pulito e Neutro</b></li>
+              <p>il colore dello sfondo e chiaro e neutro per creare un ambiente <b>Accogliente</b> e <b>Pulito</b> . </p>
+            </ul>
+            <ul>
+              <li><b>Colore Arancione</b></li>
+              <p>L'uso del colore arancione rapresenta energia e movimento, trasmetendo una senzazione di accoglienza e creativitàai visitatori. </p>
+            </ul>
+          </p>
+        </ul>
+
+
+      </div>
+
+
+
+    </div>
+
+
+  </div>
+
+
+
+
+
+
 </div>
 
 
@@ -97,9 +161,7 @@ export default{
 <style lang="scss" scoped>
 @use "../scss/partials/variables" as *;
 
-p{
-  font-size: 10px;
-}
+
 .header{
   min-height: 400px;
   background-image: url(../assets/img/1-jumbo.jpg);
@@ -153,8 +215,17 @@ h1{
   top: 350px;
   left: 50%;
   transform: translatex(-50%);
+}
 
+.analisi-img{
+  width: 160%;
+  margin: 1rem;
 
+}
+.analisi-layout{
+  border-top:3rem solid rgb(253, 118, 68) ;
+  border-left:3rem solid rgb(253, 118, 68) ;
+  padding-top: 1rem;
 }
 
 </style>
