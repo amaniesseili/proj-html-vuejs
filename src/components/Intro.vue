@@ -3,18 +3,24 @@ export default{
   data(){
     return{
       showIntro: true,
+      indexSlide: false,
       analisiSlide: false,
     };
   },
   mounted(){
     setTimeout(() => {
-        this.showIntro = false;      // 1- nascondo la prima slide dopo 10s 
-        this.analisiSlide = true;    // 2- mostro la seconda slide 
+        this.showIntro = false;      // 1- nascondo la prima slide dopo 5s 
+        this.indexSlide = true;    // 2- mostro la seconda slide 
     }, 5000);
 
     setTimeout(()=>{
-      this.analisiSlide = false;     //3- nascondo la seconda slide dopo altre 10s
+      this.indexSlide= false;     //3- nascondo la seconda slide dopo altre 10s
+      this.analisiSlide= true;
     }, 10000);
+
+    setTimeout(()=>{
+      this.analisiSlide= false;     //3- nascondo la terza slide dopo altre 45s
+    }, 40000);
   },
 
 };
@@ -58,7 +64,7 @@ export default{
     </div>
 
 <!-- slide 2- Analisi layout  -->
-<div v-if="analisiSlide" class="slid">
+<div v-if="indexSlide" class="slid">
 
   <div class="header"></div>
 
@@ -75,14 +81,14 @@ export default{
       <i class="fa-solid fa-code"></i>
       <h3 class="text-center mt-5 ms-5 ps-4">Codice</h3>
     </div>
-
-
   </div>
-
-  <p>questa e la seconda slide </p>
 
 </div>
 
+<!-- slide 2- Analisi layout  --> 
+<div v-if="analisiSlide" class="analisi-layout">
+    <p>analisi layout  </p> 
+</div>
 
 
 
@@ -91,7 +97,9 @@ export default{
 <style lang="scss" scoped>
 @use "../scss/partials/variables" as *;
 
-
+p{
+  font-size: 10px;
+}
 .header{
   min-height: 400px;
   background-image: url(../assets/img/1-jumbo.jpg);
