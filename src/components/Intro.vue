@@ -26,7 +26,7 @@ export default{
 
     setTimeout(()=>{
       this.structureSlide= false      //7- structureSlide si scompare dopo 100s
-    }, 100000);
+    }, 500000);
   },
 
 };
@@ -92,7 +92,7 @@ export default{
 </div>
 
 <!-- slide 3- Analisi layout  --> 
-<div v-if="analisiSlide" class="analisi-layout">
+<div v-if="analisiSlide" class="slide-layout">
   <div class="container d-flex">
     <div class="row">
       <div class="col-6 h-100">
@@ -147,22 +147,67 @@ export default{
   </div>
 </div>
 <!-- slide 4- structure   --> 
-<div v-if="structureSlide" class="structure">
-  <div class="content-container">
-    <div class="row">
-      <div class="col-5">
-        <div class="titolo-slide">
-          <h2>La Struttura</h2>
-          <p></p>
+<div v-if="structureSlide" class="structure ">
+  <div class="content-container slide-layout">
+    <div class="container">
+
+
+      <div class="row">
+        <div class="col-6" >
+          <div class="titolo-slide">
+            <h2>Struttura del Progetto Vue.js</h2>
+            <p class="fs-5 mt-4">Analisi dell'architettura del progetto Vue.js </p>
+          </div>
+          <h4 class="mb-4 mt-5 pt-5">Cartelle Principali</h4>
+  
+          <div class="row centered-text ms-3">
+            <div class="col-2 bg-col ">
+              <h4 >Assets</h4>
+              <p>Immagine e Risorse</p>
+            </div>
+            <div class="col-2 bg-col">
+              <h4>Partials</h4>
+              <p>Varialbili Sass e mixins</p>
+            </div>
+            <div class="col-2 bg-col">
+              <h4>Scss</h4>
+              <p>File di stile</p>
+            </div>
+            <div class="col-2 bg-col">
+              <h4>General</h4>
+              <p>Dipendenze del progetto</p>
+            </div>
+            
+          </div>
+          <div>
+            <h4 class="mb-4 mt-5 pt-5">Struttura dei componenti </h4>
+          </div>
+          <div class="row centered-text ms-3">
+            <div class="col-3 bg-col theheader">
+              <h4>TheHeader</h4>
+              <p>E la parte superiore del sito.Contiene Logo e voci di menudi navigazione</p>
+            </div>
+            <div class="col-3 bg-col themain">
+              <h4>TheMain</h4>
+              <p>E il componente centrale, e rapresenta il contenuto del sito </p>
+            </div>
+            <div class="col-3 bg-col thefooter">
+              <h4>TheFooter</h4>
+              <p>Il piede della pagina. Contiene informazioni di contatto, e link utili piu il logo del marchio con il copyright</p>
+            </div>
+          </div>
+  
+        </div>
+  
+        <div class="col-6">
+          <div>
+            <img src="src/assets/img/STRUCTURE.jpg" class="structure-img" alt="">
+          </div>
         </div>
       </div>
-      
-      <div class="col-5">
-        <div class="structure-img">
-          <img src="src/assets/img/STRUCTURE.jpg" alt="">
-        </div>
-      </div>
+
     </div>
+
   
 
 
@@ -239,10 +284,39 @@ h1{
   margin: 1rem;
 
 }
-.analisi-layout{
+.slide-layout{
   border-top:3rem solid rgb(253, 118, 68) ;
   border-left:3rem solid rgb(253, 118, 68) ;
   padding-top: 1rem;
 }
 
+.structure-img{
+  width: 79%;
+  margin: 1rem;
+
+}
+.content-container{
+  padding: 1rem ;
+}
+
+.centered-text{
+  text-align: center;
+
+}
+.bg-col{
+  background-color: $primary-color;color: white;
+  padding: .2rem;
+  margin-right:3rem ;
+}
+.theheader{
+  background-color: #78DC94;
+  
+}
+.themain{
+  background-color: #D3ABE7;
+}
+.thefooter{
+  background-color: #8ECECD;
+  
+}
 </style>
