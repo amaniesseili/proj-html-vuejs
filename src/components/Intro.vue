@@ -17,16 +17,16 @@ export default{
     setTimeout(()=>{
       this.indexSlide= false;     //3- nascondo la seconda slide dopo altre 10s
       this.analisiSlide= true;    // 4- mostro la terzza slide 
-    }, 5000);
+    }, 10000);
 
     setTimeout(()=>{
       this.analisiSlide= false;     //5- nascondo la terza slide dopo altre 90s
       this.structureSlide= true;     //6-mostro la quarta slide 
-    }, 8000);
+    }, 100000);
 
     setTimeout(()=>{
       this.structureSlide= false      //7- structureSlide si scompare dopo 100s
-    }, 20000);
+    }, 160000);
   },
 
 };
@@ -70,9 +70,9 @@ export default{
     </div>
 
 <!-- slide 2- index  -->
-<div v-if="indexSlide" class="slid">
+<div v-if="indexSlide" class="slide">
 
-  <div class="header"></div>
+  <div class="header-slide2"></div>
 
   <div class="index  d-flex">
     <div>
@@ -88,6 +88,14 @@ export default{
       <h3 class="text-center mt-5 ms-5 ps-4">Codice</h3>
     </div>
   </div>
+  <div class="container mb-5">
+    <h1>Progetto</h1>
+
+    <P>Replicare il layout proposto solo in versione <b>DESKTOP</b> usando HTML,CSS/SCSS, Vue.js e Vite. Organizzare il progetto i almeno tre componente <b>Header</b> <b>Main</b> <b>Footer</b> e popolare dinamicamente le voci di menu nell'Header e Footer con Vue.js </P>
+
+  </div>
+
+
 
 </div>
 
@@ -168,10 +176,17 @@ export default{
     </div>
   </div>
 </div>
+</div>
+
+
+
+
 <!-- slide 4- structure   --> 
 <div v-if="structureSlide" class="structure ">
   <div class="content-container slide-layout">
     <div class="container">
+
+      
       <div class="row">
         <div class="col-6" >
           <div class="titolo-slide">
@@ -179,7 +194,7 @@ export default{
             <p class="fs-5 mt-4">Analisi dell'architettura del progetto Vue.js </p>
           </div>
           <h4 class="mb-4 mt-5 pt-5">Cartelle Principali</h4>
-  
+
           <div class="row centered-text ms-3">
             <div class="col-2 bg-col ">
               <h4 >Assets</h4>
@@ -197,11 +212,12 @@ export default{
               <h4>General</h4>
               <p>Dipendenze del progetto</p>
             </div>
-            
           </div>
+
           <div>
             <h4 class="mb-4 mt-5 pt-5">Struttura dei componenti </h4>
           </div>
+
           <div class="row centered-text ms-3">
             <div class="col-3 bg-col theheader">
               <h4>TheHeader</h4>
@@ -216,21 +232,28 @@ export default{
               <p>Il piede della pagina. Contiene informazioni di contatto, e link utili piu il logo del marchio con il copyright</p>
             </div>
           </div>
-  
+
         </div>
-  
-        <div class="col-6">
-          <div>
-            <img src="src/assets/img/STRUCTURE.jpg" class="structure-img" alt="">
-          </div>
-        </div>
+        
+      <div class="col-5">
+        <div >
+          <img src="src/assets/img/STRUCTURE.jpg" class="structure-img" alt="">
       </div>
+      </div>
+
+
+
+
 
     </div>
   </div>
- </div>
-
 </div>
+</div>
+
+  
+
+
+
 
 
 
@@ -251,6 +274,19 @@ export default{
   border-left: 70px solid orangered;
   border-top: 70px solid orangered ;
   margin-bottom: 500px;
+
+}
+.header-slide2{
+    min-height: 400px;
+    background-image: url(../assets/img/1-jumbo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    width: 100%;
+    border-left: 70px solid orangered;
+    border-top: 70px solid orangered ;
+    margin-bottom: 300px;
 
 }
 
@@ -307,7 +343,7 @@ h1{
 }
 
 .structure-img{
-  width: 79%;
+  width: 95%;
   margin: 1rem;
 
 }
