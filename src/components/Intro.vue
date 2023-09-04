@@ -5,6 +5,7 @@ export default{
       showIntro: true,
       indexSlide: false,
       analisiSlide: false,
+      structureSlide: false,
     };
   },
   mounted(){
@@ -15,12 +16,17 @@ export default{
 
     setTimeout(()=>{
       this.indexSlide= false;     //3- nascondo la seconda slide dopo altre 10s
-      this.analisiSlide= true;
+      this.analisiSlide= true;    // 4- mostro la terzza slide 
     }, 5000);
 
     setTimeout(()=>{
-      this.analisiSlide= false;     //3- nascondo la terza slide dopo altre 45s
+      this.analisiSlide= false;     //5- nascondo la terza slide dopo altre 90s
+      this.structureSlide= true;     //6-mostro la quarta slide 
     }, 90000);
+
+    setTimeout(()=>{
+      this.structureSlide= false      //7- structureSlide si scompare dopo 100s
+    }, 100000);
   },
 
 };
@@ -85,7 +91,7 @@ export default{
 
 </div>
 
-<!-- slide 2- Analisi layout  --> 
+<!-- slide 3- Analisi layout  --> 
 <div v-if="analisiSlide" class="analisi-layout">
   <div class="container d-flex">
     <div class="row">
@@ -136,20 +142,31 @@ export default{
             </ul>
           </p>
         </ul>
-
-
       </div>
-
-
-
     </div>
+  </div>
+</div>
+<!-- slide 4- structure   --> 
+<div v-if="structureSlide" class="structure">
+  <div class="content-container">
+    <div class="row">
+      <div class="col-5">
+        <div class="titolo-slide">
+          <h2>La Struttura</h2>
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="col-5">
+        <div class="structure-img">
+          <img src="src/assets/img/STRUCTURE.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  
 
 
   </div>
-
-
-
-
 
 
 </div>
